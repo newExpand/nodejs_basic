@@ -1,0 +1,25 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "bin": {
+    "src": "www.js"
+  },
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "nodemon ./bin/www.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "MIT",
+  "homepage": "",
+  "repository": {
+    "type": "git",
+    "url": ""
+  }
+}
