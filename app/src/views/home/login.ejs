@@ -1,15 +1,42 @@
 <!DOCTYPE html>
 <html lang="ko">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script defer src="../../js/home/login.js"></script>
-    <title>Document</title>
-  </head>
-  <body>
-    <input id="id" type="text" placeholder="아이디" /><br />
-    <input id="psword" type="text" placeholder="비밀번호" /><br />
-    <button type="submit">로그인</button>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./css/home/login.css">
+  <script defer src="./js/home/login.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <div class="login">
+    <h2 class="active"> sign in </h2>
+    <h2 class="nonactive"> sign up </h2>
+    <form>
+      <div class="user_input">
+        <span class="label">username</span>
+        <input id="id" type="text" class="text" name="username" placeholder="아이디">
+      </div>
+      <div class="user_input">
+        <span class="label">password</span>
+        <input id="psword" type="password" class="text" name="password" placeholder="비밀번호">
+      </div>
+
+      <div class="check_input">
+        <input type="checkbox" id="checkbox-1-1" class="custom-checkbox" />
+        <label for="checkbox-1-1">Keep me Signed in</label>
+      </div>
+
+      <button type="submit" class="signin">
+        Sign In
+      </button>
+      <hr>
+      <p class="message">Not registered? <a href="/register">Create an account</a></p>
+    </form>
+
+  </div>
+</body>
+
 </html>
