@@ -12,16 +12,24 @@
 
 <body>
   <div class="login">
-    <h2 class="active"> sign in </h2>
-    <h2 class="nonactive"> sign up </h2>
-    <form>
+    <h2 class="nonactive"> sign in </h2>
+    <h2 class="active"> sign up </h2>
+    <form class="form">
       <div class="user_input">
         <span class="label">username</span>
-        <input id="id" type="text" class="text" name="username" placeholder="아이디">
+        <input id="id" type="text" class="text" placeholder="아이디">
+      </div>
+      <div class="user_input">
+        <span class="label">fullname</span>
+        <input id="name" type="text" class="text" placeholder="이름">
       </div>
       <div class="user_input">
         <span class="label">password</span>
-        <input id="psword" type="password" class="text" name="password" placeholder="비밀번호">
+        <input id="psword" type="password" class="text" placeholder="비밀번호">
+      </div>
+      <div class="user_input">
+        <span class="label">confirm password</span>
+        <input id="confirm-psword" type="password" class="text" placeholder="비밀번호 확인">
       </div>
 
       <div class="check_input">
@@ -30,10 +38,9 @@
       </div>
 
       <button type="submit" class="signin">
-        Sign In
+        Sign Up
       </button>
-      g
-      <p class="message">Not registered? <a href="/register">Create an account</a></p>
+      <p class="message">Already registered? <a href="/login">login</a></p>
     </form>
 
   </div>
