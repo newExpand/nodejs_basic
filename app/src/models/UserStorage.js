@@ -48,7 +48,6 @@ class UserStorage {
 
   static async save(userInfo) {
     const users = await this.getUsers(true);
-    // console.log(users);
     if (users.id.includes(userInfo.id)) {
       throw "이미 존재하는 아이디입니다.";
     }

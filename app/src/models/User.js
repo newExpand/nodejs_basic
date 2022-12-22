@@ -26,7 +26,6 @@ class User {
       const response = await UserStorage.save(client);
       return response;
     } catch (err) {
-      console.log(err);
       return { success: false, msg: err };
     }
   }
