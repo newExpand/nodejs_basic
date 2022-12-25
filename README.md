@@ -10,4 +10,5 @@
 어제의 문제점을 찾던 중, 인바운드 규칙을 추가하는 것과 별개로 현재 설치되있던 mysql의 경로가 잘 맞지 않아 생기는 문제도 같이 있었음. 경로를 
 mysql을 설치한 내 경로(**나같은 경우 c/Program Files/MYSQL/MySQL Server 8.0/bin**)로 직접 경로를 설치하고,<br>
 ./mysql -h {내 aws 엔드포인트 경로} -u {데이터베이스 id} -p 로 명령어를 주어 연결에 성공함
-(-p까지만 추가하고 enter를 누를 시 'Enter password:'문장이 뜨며 지정한 비밀번호 넣으면 됨)
+(-p까지만 추가하고 enter를 누를 시 'Enter password:'문장이 뜨며 지정한 비밀번호 넣으면 됨)<br>
+연결에 성공한 후, show databases 명령어를 통해 연결된 데이터베이스 확인 결과 제대로 연결됨
